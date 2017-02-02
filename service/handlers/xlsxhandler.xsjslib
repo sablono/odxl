@@ -196,5 +196,5 @@ limitations under the License.
 	exports.handleBatchPart = generateWorksheet;
 	exports.handleBatchEnd = handleBatchEnd;
 	exports.handleRequest = handleRequest;
-
+    return exports;
 }(this));

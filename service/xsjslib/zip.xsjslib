@@ -84,5 +84,7 @@
   exports.getDefaultZipInterface = getDefaultZipInterface;
   exports.setZipInterface = setZipInterface;
   exports.generate = generateArchive;
+  
+  return exports;
 
 }(this));

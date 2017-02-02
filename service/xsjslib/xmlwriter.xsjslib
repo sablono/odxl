@@ -196,5 +196,5 @@ XmlWriter.prototype = {
 exports.XmlWriter = XmlWriter;
 exports.escapeXmlText = escapeXmlText;
 exports.escapeXmlAttribute = escapeXmlAttribute;
-
+return exports;
 }(this));

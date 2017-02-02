@@ -557,5 +557,5 @@ var ODataFilterParser;
 };
 
 exports.ODataFilterParser = ODataFilterParser;
-
+return exports;
 }(this));

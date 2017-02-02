@@ -317,5 +317,6 @@ Tokenizer.prototype = {
 };
 
 exports.Tokenizer = Tokenizer;
+return exports;
 
 }(this));

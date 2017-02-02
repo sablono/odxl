@@ -597,5 +597,5 @@ var XlsxWorkbook;
 };
 
 exports.Workbook = XlsxWorkbook;
-
+return exports;
 }(this));

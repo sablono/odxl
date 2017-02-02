@@ -288,5 +288,7 @@ limitations under the License.
 	exports.isDefined = isParameterApplicableForMethod;
 	exports.validate = validateParameters;
 	exports.getDefs = getParameterDefs;
+	
+	return exports;
 
 }(this));

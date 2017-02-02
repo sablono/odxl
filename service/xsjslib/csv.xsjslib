@@ -19,9 +19,9 @@ limitations under the License.
 	var error = $.import("error.xsjslib");
 
 	function getChars(string){
-		var i, n = string.length;
+		var n = string.length;
 		var chars = [];
-		for (i = 0; i < n; i++){
+		for (var i = 0; i < n; i++){
 			chars[i] = string.charCodeAt(i);
 		}
 		return chars;
@@ -29,18 +29,18 @@ limitations under the License.
 
 	function getJsStringCode(string){
 		if (!string) {
-			return "\"\"";
+			return "\"\""; // empty string
 		}
-		var chars = getChars(string);
-		return "String.fromCharCode(" + chars.join(", ") + ")";
+		var chars = getChars(string); // array of char codes for string
+		return "String.fromCharCode(" + chars.join(", ") + ")"; // back to string
 	}
 
 	function getRegexCode(string){
 		var regexCode = [], hex;
-		var chars = getChars(string);
+		var chars = getChars(string); // array of char codes for string
 		var i, n = chars.length;
 		for (i = 0; i < n; i++){
-			hex = chars[i].toString(16);
+			hex = chars[i].toString(16); // char code number to hex 
 			switch (hex.length) {
 				case 1:
 					hex = "0" + hex;
@@ -228,4 +228,6 @@ limitations under the License.
 	}
 
 	exports.writeResultsetAsCsv = writeResultsetAsCsv;
+	
+	return exports;
 }(this));

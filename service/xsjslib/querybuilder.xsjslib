@@ -326,4 +326,5 @@ limitations under the License.
 	}
 
 	exports.buildQuery = buildQuery;
+	return exports;
 }(this));

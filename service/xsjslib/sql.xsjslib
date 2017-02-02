@@ -653,4 +653,5 @@ limitations under the License.
 	exports.checkIdentifier = checkIdentifier;
 	exports.createCalcViewPlaceholders = createCalcViewPlaceholders;
 
+    return exports;
 }(this));

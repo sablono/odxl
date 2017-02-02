@@ -35,5 +35,6 @@ limitations under the License.
 	}
 
 	exports.raise = throwError;
+    return exports;
 
 }(this));

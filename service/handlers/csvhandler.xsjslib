@@ -63,5 +63,6 @@ limitations under the License.
 	}
 
 	exports.handleRequest = handleRequest;
+    return exports;
 
 }(this));
